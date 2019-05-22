@@ -18,6 +18,9 @@ module.exports ={
             test: /\.js$/,
             include: path.resolve(__dirname, './src'),
             loaders: 'babel-loader'
+        },{
+            test: /\.css$/,
+            loader: "style-loader!css-loader"
         }]
     },
     
@@ -32,4 +35,4 @@ module.exports ={
         host: 'localhost',
         port: 8080
     }
-}y
+}
