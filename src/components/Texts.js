@@ -146,12 +146,12 @@ class Texts extends React.Component {
                                         </Typography>
                                     </Grid>
                                     <Grid item xs={3}>
-                                        <Link component={RouterLink} to="/detail">
+                                        <Link component={RouterLink} to={"detail/" + id}>
                                             <Button variant="contained" color="primary">보기</Button>
                                         </Link>
                                     </Grid>
                                     <Grid item xs={3}>
-                                        <Button variant="contained" color="primary" onClick={this.handleDelete(id)}>삭제</Button>
+                                        <Button variant="contained" color="primary" onClick={() => this.handleDelete(id)}>삭제</Button>
                                     </Grid>
                                 </Grid>
                             </CardContent>
